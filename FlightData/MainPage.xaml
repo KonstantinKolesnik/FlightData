@@ -9,6 +9,31 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+
+
+
+        <CommandBar Grid.Row="2">
+            <CommandBar.PrimaryCommands>
+
+                <AppBarButton Label="Import" Click="AppBarButton_Click">
+                    <AppBarButton.Icon>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE118;"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <!--<AppBarButton Label="{Binding Labels.Save, Source={StaticResource LM}}" Command="{Binding AppCommands.ExportProfilesCommand, Source={StaticResource AppManager}}">
+                    <AppBarButton.Icon>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE11C;"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+                <AppBarSeparator/>-->
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
     </Grid>
 </Page>
