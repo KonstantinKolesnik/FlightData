@@ -3,6 +3,11 @@ using System.IO;
 
 namespace FlightData.Core
 {
+    // https://github.com/daviesian/phantom-decoder
+    // https://github.com/mikeemoo/dji-log-parser
+    // http://djilogs.live555.com/
+
+
     public class FlightRecord
     {
         // some properties here;
